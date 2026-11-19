@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="password generator" />
+    <title>Random Password Generator</title>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+  <body>
+    <!-- Parent Container -->
+    <div class="random_password">
+      <h1 id="">Random Password Generator</h1>
+      <!-- Inputs -->
+      <div class="input">
+        <input
+          type="text"
+          id="input"
+          placeholder=" generated password"
+          readonly
+        />
+        <i class="fa-regular fa-copy"></i>
+      </div>
+      <!-- button -->
+      <button id="gen">Generate Password</button>
+    </div>
+    <div class="alert_message active">Password Copied</div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+:root{
+    --oroma:#FF3C00;
+    --vegy:#008000;
+    --navy :#0c48a3;
+    --angel: #ffffff;
+    --ash: rgb(212, 186, 186)
+;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.random_password{
+    background-color: var(--oroma);
+    padding: 30px;
+    border-radius: 12px;
+}
+h1{
+    color: var(--angel);
+    margin-bottom: 10px;
+}
+.input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    border: 1px dashed grey;
+    margin-bottom: 10px;}
+#input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: var(--angel);
+    outline: none;
+}
+input::placeholder{
+    color:var(--ash) ;
+    letter-spacing: 3px;
+}
+.alert_message{
+
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.4s;
+    background-color: var(--vegy);
+    color: var(--angel);
+    font-size: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    align-content: center;
+}
+.fa-copy{
+    opacity: 0.3;
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--angel);
+
+}
+.fa-copy{
+    opacity: 0.9;
+}
+#gen{
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    color: var(--angel);
+    font-size: 20px;
+    background-color: var(--navy);
+    cursor: pointer;
+}
+#gen:hover{
+    background-color: var(--vegy);
+}
+#gen:active{
+    transform: scale(0.9);
+}
+.active.alert_message{
+    right: -300px;
+}
